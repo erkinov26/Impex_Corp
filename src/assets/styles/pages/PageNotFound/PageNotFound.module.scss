@@ -1,0 +1,91 @@
+.NotFoundBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  flex-direction: column;
+  font-family: "Inter";
+  text-align: center;
+
+  .logo button {
+    color: #19746b;
+    font-size: 5vw;
+    @media screen and (max-width: 768px) {
+      font-size: 7vw;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 10vw;
+    }
+  }
+  h1 {
+    font-size: 3vw;
+    margin-top: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 5vw;
+      margin-top: unset;
+    }
+  }
+  .home_btn {
+    padding: 15px 25px;
+    background-color: #19746b;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 7px;
+    font-family: "inter";
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      padding: 15px 20px;
+    }
+
+    @media screen and (max-width: 540px) {
+      font-size: 12px;
+      margin-top: 15px;
+      padding: 10px;
+    }
+
+    span {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+    }
+
+    .arrow_left {
+      width: unset;
+      height: unset;
+      margin-bottom: unset;
+      transform: unset;
+      vertical-align: middle;
+      margin-right: 10px;
+      @media screen and (max-width: 768px) {
+        margin-right: 10px;
+      }
+      @media screen and (max-width: 540px) {
+        margin-right: 5px;
+      }
+    }
+  }
+  h2 {
+    font-size: 3vw;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    #smile {
+      writing-mode: vertical-rl;
+      color: black;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 5.5vw;
+    }
+  }
+  #error {
+    color: red;
+  }
+}

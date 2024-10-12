@@ -1,0 +1,12 @@
+.CardInfo{
+    .swiper{
+        width: 100%;
+        .swiper-slide{
+            text-align: center;
+            width: unset;
+            img{
+                width: 95%;
+            }
+        }
+    }
+}

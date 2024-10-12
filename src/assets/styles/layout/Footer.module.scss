@@ -1,0 +1,236 @@
+footer {
+  background-color: #00241b;
+  font-family: "Inter";
+  margin-top: 50px;
+  .logo {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3.25vw;
+    button {
+      font-size: 35px;
+      color: #19746b;
+      font-family: "Inter";
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 490px) {
+        font-size: 20px;
+      }
+    }
+  }
+  .geeks_logo {
+    width: 1%;
+    vertical-align: middle;
+    @media screen and (max-width: 768px) {
+      width: 2%;
+    }
+    @media screen and (max-width: 590px) {
+      width: 3%;
+    }
+  }
+  a {
+    color: #fff;
+  }
+  .footer_content {
+    display: flex;
+    justify-content: center;
+    padding-inline: 15vw;
+    flex-wrap: wrap;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+    gap: 4%;
+    @media screen and (max-width: 1024px) {
+      padding-inline: 10vw;
+    }
+    .row_1,
+    .row_2,
+    .row_3,
+    .row_4 {
+      width: 22%;
+      ul li:first-child {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      ul li a {
+        transition: all 0.3s;
+      }
+
+      ul li a:hover {
+        color: #43dbcc;
+      }
+
+      ul li {
+        color: #fff;
+        font-family: "Inter";
+        font-size: 18px;
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 0.44px;
+        list-style-type: none;
+        width: 100%;
+      }
+    }
+  }
+
+  #madeby {
+    margin: 0 auto;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #55a4c5;
+    .geeks_text {
+      font-weight: 500;
+      font-size: 24px;
+      width: max-content;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      pre {
+        display: flex;
+        align-items: center;
+        font-family: "Inter";
+      }
+      @media screen and (max-width: 590px) {
+        border: none;
+      }
+    }
+    a {
+      color: #000;
+    }
+    svg {
+      width: 20px;
+      height: 27px;
+      margin-left: 5px;
+      vertical-align: sub;
+    }
+    @media screen and (max-width: 1024px) {
+      .geeks_text {
+        font-size: 16px;
+      }
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .social_media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    @media screen and (max-width: 768px) {
+      justify-content: right;
+      padding-inline: 5vw;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    li {
+      margin-right: 1.8em;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+    li a img {
+      width: 40px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .footer_content {
+      .row_1,
+      .row_2,
+      .row_3,
+      .row_4 {
+        ul li:first-child {
+          font-size: 21px;
+        }
+        ul li {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .social_media {
+      ul li {
+        margin-right: 1rem;
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer_content {
+      gap: 25px;
+      margin: 0 auto;
+      padding-inline: 5vw;
+      width: 100%;
+      padding-bottom: 0;
+      justify-content: space-between;
+      .row_1,
+      .row_2,
+      .row_3,
+      .row_4 {
+        width: 45%;
+        ul li:first-child {
+          font-size: 21px;
+          margin-bottom: 10px;
+        }
+        ul {
+          li {
+            margin-bottom: 10px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .social_media {
+      ul li {
+        margin-right: 1rem;
+        img {
+          width: 28px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .logo {
+      padding-block: 4.25vw;
+    }
+    .footer_content {
+      width: 100%;
+      justify-content: space-between;
+      .row_1,
+      .row_2,
+      .row_3,
+      .row_4 {
+        width: 45%;
+        ul li:first-child {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        ul li {
+          font-size: 12px;
+        }
+      }
+    }
+    .social_media {
+      ul li {
+        margin-right: 1rem;
+        img {
+          width: 7vw;
+        }
+      }
+    }
+  }
+}

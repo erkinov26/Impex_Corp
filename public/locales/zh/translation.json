@@ -1,0 +1,205 @@
+{
+  "notFoundText": "抱歉，找不到页面。",
+  "notFoundData": "不好意思，沒有發現什麼",
+  "notFoundDataCatalog": "抱歉，目前目錄為空，請稍後重試。",
+  "backBtn": "後退",
+  "header": {
+    "home": "首页",
+    "catalogue": "目录",
+    "ourcompany": "我们的公司",
+    "HeaderCatalog": {
+      "model": "热门型号",
+      "countries": {
+        "title": "国家",
+        "items": {
+          "korea": "韩国",
+          "china": "中国",
+          "japan": "日本"
+        }
+      }
+    },
+    "MetaTags": {
+      "home": "IMPEX CORP || 阿聯酋、韓國和中國的汽車進出口",
+      "ourcompany": "IMPEX CORP || 我们的公司",
+      "catalogue": "IMPEX CORP || 目录",
+      "defaultDescription": "\"Impex-Corp\" LLC 提供從韓國、中國、阿聯酋等國家購買和進口汽車的服務。"
+    }
+  },
+  "HomePage": {
+    "GreetingBlock": {
+      "title": "欢迎来到 Impex Corp 汽车展厅",
+      "text": "Impex Corp 是一家汽車公司，為客戶提供與汽車產業相關的廣泛產品和服務。 Impex Corp 已成為市場領導者，擁有多項關鍵優勢，使其成為買家的理想選擇",
+      "buttonText": "了解更多"
+    },
+    "CatalogBlock": {
+      "titles": {
+        "mainTitle": "目录",
+        "newProducts": "新产品",
+        "fromChina": "来自中国的汽车",
+        "fromKorea": "来自韩国的汽车"
+      },
+      "buttonText": "了解更多"
+    },
+    "FAQBlock": {
+      "titles": {
+        "mainTitle": "常见问题"
+      }
+    },
+    "firstBlock": {
+      "title1": "每个细节都充满安全性、可靠性和风格！",
+      "buttonText": "电话咨询"
+    },
+    "OurServices": {
+      "title": "我们的服务",
+      "search": "搜索和购买",
+      "cars": "来自韩国和中国的汽车",
+      "delivery": "汽车交付",
+      "guarantee": "在比什凯克市提供保修",
+      "registration": "汽车注册",
+      "accounting": "以及注销 (交通警察局)",
+      "insurance": "全面保险",
+      "auto": "交付前检查"
+    }
+  },
+  "AboutUs": {
+    "main_title": "«Impex Corp»公司提供從韓國和中國購買和進口汽車的服務！",
+    "buttonText": "稱呼",
+    "title": "你會得到 ：",
+    "card1": {
+      "text": " 對我公司來說是專用機械設備的選用和交付。我們也供應汽車零件、配件和化學品。",
+      "bold": "選擇是重要任務之一"
+    },
+    "card2": {
+      "bold": "可靠性是我們的公司",
+      "text": "不到一年的時間，與獨聯體7個國家、30多個城市簽訂了100多個合約"
+    },
+    "card3": {
+      "bold": "還有「Impex Corp.」公司。",
+      "text": " 正在向食品進出口和旅遊業方向發展。我們公司的主要業務是從中國、韓國、日本、阿聯酋、喬治亞、歐洲、美國等國家進口和出口汽車。"
+    },
+    "back": {
+      "span": "Impex Corp",
+      "text": "無可挑剔的工作",
+      "text2": "- 當您從「Impex Corp.」購買汽車或訂購時，保證您對交易充滿信心。"
+    },
+    "bottomTitle": " 我们公司的主要业务是从中国、日本、阿联酋、格鲁吉亚、欧洲和美国等国家进口和出口汽车。"
+  },
+  "footer": {
+    "aboutus": {
+      "name": "关于我们",
+      "menu": {
+        "company": "我们的公司",
+        "services": "服务"
+      }
+    },
+    "support": {
+      "name": "支持",
+      "menu": {
+        "feedback": "反馈意见"
+      }
+    },
+    "branches": {
+      "name": "我們的分行",
+      "menu": {
+        "address1": "77 Usenbaeva st. Bishkek"
+      }
+    },
+    "contacts": {
+      "name": "联系方式",
+      "menu": {
+        "number1": "+996 (500) 67-76-33"
+      }
+    }
+  },
+  "Catalog": {
+    "search": "搜索",
+    "title": "目录",
+    "filter": "筛选",
+    "hp": "HP",
+    "kwh": "kWh",
+    "brandError": "首先選擇您的汽車品牌!",
+    "km": "km",
+    "liter": "L",
+    "characteristics": {
+      "catalog": "品牌",
+      "model": "型号",
+      "yearIssue": "年份",
+      "wheel": {
+        "title": "方向盘",
+        "left": "左",
+        "right": "右"
+      },
+      "fuel": {
+        "title": "燃料",
+        "diesel": "柴油引擎",
+        "petrol": "汽油",
+        "electro": "電子",
+        "hybrid": "雜交種",
+        "gas": "氣體"
+      },
+      "country": {
+        "title": "制造国",
+        "CH": "中国",
+        "SK": "韩国",
+        "UR": "欧洲",
+        "UAE": "阿联酋",
+        "USA": "美國",
+        "GG": "喬治亞州",
+        "JP": "日本"
+      },
+      "driveUnit": {
+        "title": "執行器"
+      },
+      "transmission": {
+        "title": "變速箱",
+        "mechanical": "機械地",
+        "automatic": "自動的",
+        "stepless": "無段變速",
+        "robot": "機器人"
+      }
+    },
+    "country": {
+      "all": "全部",
+      "chine": "中国",
+      "korea": "韩国",
+      "newItems": "新品"
+    },
+    "input": {
+      "pricesFrom": "价格从",
+      "priceBegore": "价格到",
+      "mileageFrom": "里程从",
+      "mileageTo": "里程到",
+      "volumeFrom": "容量从",
+      "volumeTo": "容量到"
+    },
+    "button": {
+      "title": "查找"
+    }
+  },
+  "CarInfo": {
+    "titles": {
+      "common": {
+        "title": "常見信息",
+        "car_type": "車身類型",
+        "characteristics": "機器特點",
+        "share": "分享",
+        "number_doors": "門數",
+        "number_seats": "座位數量",
+        "mileage": "里程",
+        "period": "生產周期",
+        "transmission": "變速器",
+        "drive": "驅動方式"
+      },
+      "engine": {
+        "title": "發動機",
+        "eng_type": "發動機類型",
+        "power": "功率",
+        "capacity": "電池容量",
+        "per_charge_milleage": "一次充電可行駛里程",
+        "volume": "體積（liters）",
+        "battery_capacity": "電池容量",
+        "consumption": "消耗"
+      }
+    }
+  }
+}

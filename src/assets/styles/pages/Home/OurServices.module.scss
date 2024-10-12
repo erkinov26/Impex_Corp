@@ -1,0 +1,139 @@
+.parentContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3.472vw;
+  padding-bottom: 9.722vw;
+}
+
+.Services{
+  position: relative;
+  top: -100px;
+}
+
+.serviceTitle {
+  font-family: "Inter";
+  margin-top: 3.125vw;
+  font-size: 2.5vw;
+  align-self: flex-start;
+  margin-bottom: 5.208vw;
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+  font-weight: bold;
+  font-family: "Inter";
+  font-size: 2vw;
+  margin-bottom: 0.625vw;
+}
+
+.span1,
+.span2,
+.span3,
+.span4 {
+  font-size: 1.5vw;
+  margin-top: 0.1302vw;
+  font-family: "Inter";
+}
+
+@media screen and (max-width: 768px) {
+  .serviceTitle {
+    margin-bottom: 30px;
+    font-size: 4vw;
+  }
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    font-size: 3vw;
+    display: inline;
+  }
+  .span1,
+  .span2,
+  .span3,
+  .span4 {
+    font-size: 3vw;
+    display: inline;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .serviceItem img {
+    width: 4em;
+    margin-right: 1.875em;
+  }
+  .serviceItem {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.875em;
+  }
+  .serviceItem img {
+    margin-right: 1.875em;
+    width: 4em;
+  }
+  .serviceTitle {
+    margin-top: 1.875em;
+    font-size: 4.5vw;
+  }
+  .parentContainer {
+    margin-left: 1.25em;
+  }
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4 {
+    font-size: 3.3vw;
+    margin-bottom: 0.5em;
+  }
+  .span1,
+  .span2,
+  .span3,
+  .span4 {
+    font-size: 3.3vw;
+    margin-left: 5px;
+  }
+}
+
+.row {
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4vw;
+  .col_6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    .imgDiv {
+      width: 25%;
+    }
+    img {
+      width: 85%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      gap: 20px;
+      justify-content: unset;
+      .imgDiv {
+        width: 20%;
+        img {
+          vertical-align: middle;
+          width: 100%;
+        }
+      }
+    }
+    @media screen and (max-width: 468px) {
+      .imgDiv {
+        width: 25%;
+      }
+    }
+  }
+}

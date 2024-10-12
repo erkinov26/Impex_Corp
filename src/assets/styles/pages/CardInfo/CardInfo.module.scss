@@ -1,0 +1,348 @@
+.card_info_section {
+  width: 90vw;
+  margin: 0 auto;
+  font-family: "Inter";
+  margin-top: 30px;
+  .back {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 30px;
+    p {
+      font-weight: 500;
+      font-size: 22px;
+      color: #000000;
+    }
+    svg {
+      width: 35px;
+      height: 35px;
+      margin-right: 15px;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 95px;
+    }
+    @media screen and (max-width: 425px) {
+      margin-top: 80px;
+      padding-bottom: 15px;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .card_slide_block {
+    display: flex;
+    justify-content: space-between;
+    .card_slide {
+      width: 60vw;
+
+      .card_slide_main {
+        width: max-content;
+        position: relative;
+        overflow: hidden;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 60vw;
+          height: 33vw;
+          border-radius: 20px;
+          margin-bottom: 15px;
+          object-fit: cover;
+          @media screen and (max-width: 1024px) {
+            height: 30vw;
+          }
+          @media screen and (max-width: 768px) {
+            height: 45vw;
+            width: 100%;
+          }
+        }
+        button {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+          border-radius: 50%;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .left {
+          left: 50px;
+          top: 50%;
+          @media screen and (max-width: 1024px) {
+            left: 20px;
+            top: 45%;
+          }
+        }
+        .right {
+          top: 50%;
+          right: 50px;
+          @media screen and (max-width: 1024px) {
+            top: 45%;
+            right: 20px;
+          }
+        }
+      }
+
+      .card_slide_list {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .card_slide_item {
+          flex-shrink: 0;
+          &:hover {
+            cursor: pointer;
+          }
+          img {
+            height: 8.5vw;
+            border-radius: 20px;
+            object-fit: cover;
+            @media screen and (max-width: 768px) {
+              border-radius: 10px;
+              height: 15vw;
+            }
+          }
+        }
+      }
+    }
+    .card_info_card {
+      width: 28vw;
+      height: fit-content;
+      padding: 1vw;
+      background-color: #eaeaea;
+      border-radius: 30px;
+
+      h1,
+      .car_price {
+        font-size: 2.6vw;
+        font-family: "Inter";
+      }
+      .car_price {
+        margin-top: 1.5vw;
+        color: #19746b;
+      }
+
+      .car_struct_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        @media screen and (max-width: 768px) {
+          justify-content: flex-start;
+          gap: 0 5%;
+        }
+        .car_struct_list_item {
+          display: flex;
+          width: 48%;
+          align-items: center;
+          padding: 0.4vw 0.3vw;
+          color: #000;
+          font-size: 1.6vw;
+          font-weight: bold;
+          background-color: #fff;
+          border-radius: 15px;
+          margin-top: 0.7vw;
+          img {
+            width: 1.5vw;
+          }
+
+          .car_struct_text {
+            margin-left: 0.8vw;
+            max-width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: 400;
+          }
+        }
+      }
+      .btn {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5.2vw;
+        color: #fff;
+        background-color: #19746b;
+        padding: 0.8vw 0;
+        font-size: 1.3vw;
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+
+  .share {
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+    font-size: 2vw;
+    &:hover {
+      cursor: pointer;
+    }
+    span {
+      margin-left: 1vw;
+    }
+  }
+  .character_main_title {
+    margin-bottom: 4vw;
+    font-size: 2vw;
+    margin-top: 3.5vw;
+  }
+  .character_cards {
+    display: flex;
+    gap: 20px;
+    .card {
+      width: 35%;
+      height: auto;
+      .card_title {
+        text-align: left;
+        font-size: 1.5vw;
+        margin-bottom: 1vw;
+      }
+      .card_info_list {
+        li {
+          display: flex;
+          padding: 0.5vw 1.5vw;
+          justify-content: space-between;
+          margin-bottom: 1vw;
+          font-size: 1.25vw;
+          border-radius: 15px;
+          background-color: #eaeaea;
+
+          .keys_list {
+            color: grey;
+          }
+          .values_list {
+            text-align: right;
+            text-transform: uppercase;
+          }
+          .keys_list div,
+          .values_list div {
+            margin-bottom: 0.5vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card_info_section {
+    margin-top: 70px;
+    .card_slide_block {
+      display: block;
+      .card_slide {
+        width: 90vw;
+        .card_slide_main {
+          button {
+            width: 4vw;
+            height: 4vw;
+            font-size: 3vw;
+          }
+          .left {
+            left: 3vw;
+          }
+          .right {
+            right: 3vw;
+          }
+        }
+      }
+      .card_info_card {
+        width: 90vw;
+        margin-top: 5vw;
+        height: auto;
+        padding: 20px;
+
+        h1,
+        .car_price {
+          font-size: 4.5vw;
+        }
+
+        .car_struct_list {
+          .car_struct_list_item {
+            width: 30%;
+            padding: 10px;
+            font-size: 3vw;
+            border-radius: 15px;
+            margin-top: 2.5vw;
+            img {
+              width: 3vw;
+            }
+            .car_struct_text {
+              margin-left: 2vw;
+            }
+          }
+        }
+        .btn {
+          margin-top: 5.2vw;
+          padding: 2vw 0;
+          font-size: 3vw;
+          border-radius: 1vw;
+        }
+      }
+    }
+
+    .share {
+      margin-top: 2vw;
+      font-size: 4vw;
+
+      span {
+        margin-left: 2vw;
+      }
+    }
+    .character_main_title {
+      margin-bottom: 3vw;
+      font-size: 5vw;
+      margin-top: 25px;
+    }
+    .character_cards {
+      display: block;
+      .card {
+        width: 100%;
+        .card_title {
+          text-align: left;
+          font-size: 4vw;
+          margin-bottom: 2vw;
+          font-weight: 400;
+        }
+        .card_info_list {
+          li {
+            padding: 10px 15px;
+            background-color: #eee;
+            margin-bottom: 3vw;
+            font-size: 4vw;
+            .keys_list div,
+            .values_list div {
+              margin-bottom: 3vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .card_info_section {
+    .card_slide_block {
+      .card_info_card {
+        .car_struct_list {
+          .car_struct_list_item {
+            padding: 1.5vw 2vw;
+            font-size: 3.5vw;
+          }
+        }
+      }
+    }
+  }
+}

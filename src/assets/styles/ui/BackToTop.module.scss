@@ -1,0 +1,31 @@
+.top_btn {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  background-color: #d8d8d8;
+  bottom: 750px;
+  right: 3vw;
+  padding: 10px;
+  z-index: 999;
+  border-radius: 50%;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  box-shadow: 0 1px 5px black;
+
+  svg {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60px;
+  @media screen and (max-width: 490px) {
+    bottom: 100px;
+  }
+}

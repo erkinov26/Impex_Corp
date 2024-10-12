@@ -1,0 +1,60 @@
+{
+  "name": "impexcorp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview --port 3000",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.11",
+    "axios": "^1.6.7",
+    "framer-motion": "^11.0.3",
+    "i18next": "^23.11.1",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-http-backend": "^2.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^14.1.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.0",
+    "swiper": "^11.0.7",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "sass": "^1.70.0",
+    "vite": "^5.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.jsx": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+.mob_nav {
+  position: fixed;
+  top: 0px;
+  background-color: #f9f3f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  z-index: 99;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  div {
+    display: flex;
+    align-items: center;
+    &:first-child {
+      width: 25%;
+      button {
+        color: #19746b;
+        font-family: "Inter";
+        font-size: 24px;
+        @media screen and (max-width: 490px) {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 540px) {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.burger_btn {
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  top: 64px;
+  z-index: 10;
+  right: 0;
+  visibility: hidden;
+}
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  position: absolute;
+  visibility: hidden;
+}
+
+.menu_content {
+  transition: all 0.4s;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f9f3f3;
+  font-family: "Inter";
+  font-weight: bold;
+  z-index: 100;
+  transform: translateX(100%);
+  border-bottom-left-radius: 10px;
+  a {
+    color: #000;
+  }
+  p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      padding: 20px;
+      display: flex;
+      &:not(:last-child) {
+        border-bottom: 1px solid #bcbcbc;
+      }
+    }
+    a {
+      color: #000;
+    }
+    .dropDown{
+      padding: 0;
+    }
+    button {
+      border: none;
+      font-size: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+}
+
+.active {
+  transition: all 0.3s;
+  visibility: visible;
+  transform: translateX(0%);
+}

@@ -1,0 +1,100 @@
+.questions_item {
+  .questions_item_title {
+    color: #000;
+    font-family: inherit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    & {
+      cursor: pointer;
+    }
+
+    .questions_plus {
+      width: 50px;
+      height: 50px;
+      position: relative;
+
+      .plus_h {
+        width: 5px;
+        height: 100%;
+        transition: 0.2s;
+        transform-origin: 0 0;
+        position: absolute;
+        rotate: 0deg;
+        transform-origin: 0 0;
+        background-color: #000;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .hide_h {
+        width: 5px;
+        height: 100%;
+        transition: 0.2s;
+        transform-origin: 0 0;
+        rotate: 90deg;
+        position: absolute;
+        background-color: #000;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .plus_g {
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        transition: 0.2s;
+        rotate: 0deg;
+        transform-origin: 0 0;
+        background-color: #000;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .questions_text_block {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 30px;
+
+    .questions_text {
+      position: absolute;
+      color: black;
+      opacity: 0.3;
+      transition: 0.5s;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      transition: 0.5s;
+    }
+  }
+
+  .show_box {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 30px;
+
+    .show {
+      position: absolute;
+      top: 0;
+      color: black;
+      transition: 0.5s;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 500;
+      transition: 0.5s;
+    }
+  }
+}

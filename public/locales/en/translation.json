@@ -1,0 +1,205 @@
+{
+  "notFoundText": "Sorry, this page can not be found.",
+  "notFoundData": "Sorry, we didn't find anything.",
+  "notFoundDataCatalog": "Sorry, catalog is empty, try again later.",
+  "backBtn": "Back",
+  "header": {
+    "catalogue": "Catalog",
+    "home": "Home",
+    "ourcompany": "Our Company",
+    "HeaderCatalog": {
+      "model": "Popular models",
+      "countries": {
+        "title": "Сountry",
+        "items": {
+          "korea": "Korea",
+          "china": "China",
+          "japan": "Japan"
+        }
+      }
+    },
+    "MetaTags": {
+      "home": "IMPEX CORP || Import-export of cars from the UAE, Korea and China",
+      "ourcompany": "IMPEX CORP || Our Company",
+      "catalogue": "IMPEX CORP || Catalog",
+      "defaultDescription": "LLC \"Impex-Corp\" provides services for the purchase and import of cars from Korea, China, UAE and other countries."
+    }
+  },
+  "HomePage": {
+    "GreetingBlock": {
+      "title": "Welcome to Impex Corp car dealership!",
+      "text": "Impex Corp is an auto company that offers its customers a wide range of products and services related to the automotive industry. Having become a leading player in the market, Impex Corp has several key advantages that make them an ideal choice for buyers",
+      "buttonText": "More details"
+    },
+    "CatalogBlock": {
+      "titles": {
+        "mainTitle": "Catalog",
+        "newProducts": "New products",
+        "fromChina": "Cars from China",
+        "fromKorea": "Cars from Korea"
+      },
+      "buttonText": "More details"
+    },
+    "FAQBlock": {
+      "titles": {
+        "mainTitle": "Frequently asked Questions"
+      }
+    },
+    "firstBlock": {
+      "title1": "Security, reliability, and style in every detail!",
+      "buttonText": "Call"
+    },
+    "OurServices": {
+      "title": "Our Servisces",
+      "search": "Search and purchase",
+      "cars": "cars from Korea and China",
+      "delivery": "Car delivery",
+      "guarantee": "with guarantee in Bishkek",
+      "registration": "Car registration",
+      "accounting": "and deregistration (REO GAI)",
+      "insurance": "Full insurance",
+      "auto": "while delivering to Kyrgyzstan"
+    }
+  },
+  "AboutUs": {
+    "main_title": "The company « Impex Corp » offers services for purchasing and importing cars from Korea, China and other countries.",
+    "buttonText": "Call",
+    "title": "Our advantages",
+    "card1": {
+      "bold": "Choice - ",
+      "text": "We provide selection and delivery of specialized equipment and machinery, as well as offer a wide range of spare parts, accessories, and automotive chemicals."
+    },
+    "card2": {
+      "bold": "Reliability - ",
+      "text": "In less than a year, our company has successfully concluded over 100 contracts with more than 7 countries and 30 cities in the CIS, confirming our reliability and professionalism."
+    },
+    "card3": {
+      "bold": "Development - ",
+      "text": "We are actively expanding in the field of import and export of food products and tourism, extending the geographical scope of our operations and strengthening our positions in the global market."
+    },
+    "back": {
+      "span": "Impex Corp",
+      "text": "Seamless service from",
+      "text2": " - your pathway to confident car purchases or orders with us."
+    },
+    "bottomTitle": "The main activity of our company is the import and export of cars from countries such as China, Japan, UAE, Georgia, Europe, and the USA."
+  },
+  "footer": {
+    "aboutus": {
+      "name": "About Us",
+      "menu": {
+        "company": "Our company",
+        "services": "Services"
+      }
+    },
+    "support": {
+      "name": "Support",
+      "menu": {
+        "feedback": "Feedback"
+      }
+    },
+    "branches": {
+      "name": "Our branches",
+      "menu": {
+        "address1": "77 Usenbaeva St. Bishkek"
+      }
+    },
+    "contacts": {
+      "name": "Contacts",
+      "menu": {
+        "number1": "+996 (500) 67-76-33"
+      }
+    }
+  },
+  "Catalog": {
+    "search": "Search",
+    "title": "Catalog",
+    "filter": "Filter",
+    "hp": "HP",
+    "kwh": "kWh",
+    "liter": "L",
+    "km": "km",
+    "brandError": "Select car brand first!",
+    "characteristics": {
+      "catalog": "Brand",
+      "model": "Model",
+      "yearIssue": "Year of issue",
+      "wheel": {
+        "title": "Steering wheel",
+        "left": "Left",
+        "right": "Right"
+      },
+      "fuel": {
+        "title": "Fuel",
+        "diesel": "Diesel",
+        "petrol": "Petrol",
+        "electro": "Electro",
+        "hybrid": "Hybrid",
+        "gas": "Gas"
+      },
+      "country": {
+        "title": "Country",
+        "CH": "China",
+        "SK": "Korea",
+        "UR": "Europe",
+        "UAE ": "UAE",
+        "USA  ": "USA",
+        "GG ": "Georgia",
+        "JP": "Japan"
+      },
+      "driveUnit": {
+        "title": "Drive unit"
+      },
+      "transmission": {
+        "title": "Transmission",
+        "mechanical": "Manual",
+        "automatic": "Automatic",
+        "stepless": "Variable",
+        "robot": "Robotic"
+      }
+    },
+    "country": {
+      "all": "All",
+      "chine": "China",
+      "korea": "Korea",
+      "newItems": "New arrivals"
+    },
+    "input": {
+      "pricesFrom": "Prices from",
+      "priceTo": "Prices to",
+      "mileageFrom": "Mileage from",
+      "mileageTo": "Mileage to",
+      "volumeFrom": "Volume from",
+      "volumeTo": "Volume to"
+    },
+    "button": {
+      "title": "Find"
+    }
+  },
+  "CarInfo": {
+    "titles": {
+      "common": {
+        "title": "Common Information",
+        "characteristics": "Characteristics",
+        "share": "Share",
+        "car_type": "Body Type",
+        "number_doors": "Doors",
+        "number_seats": "Seats",
+        "mileage": "Mileage",
+        "period": "Realese Period",
+        "transmission": "Transmission",
+        "drive": "Drive"
+      },
+      "engine": {
+        "title": "Engine",
+        "eng_type": "Engine Type",
+        "power": "Power",
+        "volume": "Volume in liters",
+        "capacity": "Battery capacity",
+        "per_charge_milleage": "Per charge milleage",
+        "battery_capacity": "Battery Capacity",
+        "consumption": "Consumption"
+      }
+    }
+  }
+}

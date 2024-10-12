@@ -1,0 +1,231 @@
+.hero {
+  width: 100%;
+  position: relative;
+  font-family: "Inter";
+  margin-bottom: 20px;
+  background-image: url(@images/2016-bmw-m2-202-1585760824.webp);
+  background-size: cover;
+  background-position: center;
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+  }
+  .hero_box {
+    margin-left: 5.2vw;
+    position: relative;
+    z-index: 6;
+    h1 {
+      text-shadow: 0 0 10px #000;
+      font-size: 3.2vw;
+      font-family: "Inter";
+      margin-bottom: 3vw;
+      color: #fff;
+      width: 60%;
+    }
+    button {
+      background-color: #19746b;
+      border-radius: 0.5vw;
+      color: #fff;
+      border: none;
+      padding: 0.7vw 5.5vw;
+      font-size: 20px;
+      @media screen and (max-width: 768px) {
+        padding: 0.7vw 4.5vw;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.about_main {
+  font-family: "Inter";
+  margin: 0 auto;
+  width: 90vw;
+  .about_title {
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 4%;
+    margin-top: 6vw;
+    span {
+      color: #19746b;
+    }
+  }
+  .question {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin-top: 2.5vw;
+    margin-bottom: 4.5vw;
+  }
+
+  .about_cards {
+    .question {
+      text-align: center;
+    }
+
+    .cards_list {
+      display: flex;
+      justify-content: space-between;
+      .card_item {
+        width: 30%;
+        img {
+          width: 100%;
+        }
+        article {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 2.4vw;
+          font-size: 1.25vw;
+          text-align: center;
+          font-weight: 500;
+          letter-spacing: 0.48px;
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper_container {
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 5vw;
+  }
+  .bottom_text {
+    width: 50vw;
+    margin: 0 auto;
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: 6.25vw;
+  }
+}
+.about_back {
+  margin-top: 7.2vw;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(30, 149, 137, 1) 100%
+  );
+  .info {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    .text_mobile {
+      display: none;
+    }
+    .text {
+      font-family: "Inter";
+      width: 66vw;
+      font-size: 1.8vw;
+      font-weight: 900;
+      span {
+        color: #fff;
+      }
+    }
+    .img_box {
+      width: 24vw;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 490px) {
+  .hero {
+    height: 40vh;
+    .hero_box {
+      margin-left: 7vw;
+      margin-top: 18vw;
+      h1 {
+        width: 70%;
+        text-shadow: 0 0 10px #000;
+        font-size: 15px;
+      }
+      button {
+        padding: 1.5vw 6vw;
+        font-size: 14px;
+        border-radius: 5px;
+        font-family: "Inter";
+      }
+    }
+  }
+  .about_main {
+    font-family: "Inter";
+    margin: 0 auto;
+    width: 90vw;
+    .question {
+      font-size: 14px;
+    }
+
+    .about_cards {
+      .cards_list {
+        display: block;
+        .card_item {
+          width: 70%;
+          margin: 0 auto;
+          text-align: center;
+          &:not(:last-child) {
+            margin-bottom: 4vw;
+          }
+          img {
+            max-width: 265px;
+            border-radius: 3vw;
+            height: 110px;
+            object-fit: cover;
+          }
+          article {
+            font-size: 12px;
+            text-align: center;
+            font-weight: 500;
+
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper_container {
+      width: 60vw;
+    }
+    .bottom_text {
+      width: 55vw;
+      margin: 0 auto;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 6.25vw;
+      font-weight: 500;
+    }
+  }
+  .about_back {
+    .info {
+      .img_box {
+        display: none;
+      }
+      .text {
+        display: none;
+      }
+      .text_mobile {
+        display: block;
+        font-family: "Inter";
+        padding: 25px 0;
+        width: 85%;
+        text-wrap: balance;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 121.875%;
+        letter-spacing: 0.48px;
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,411 @@
+.Catalog {
+  margin: 0 auto;
+  width: 90%;
+  font-family: "Inter";
+  @media screen and (max-width: "550px") {
+    gap: 20px;
+    justify-content: unset !important;
+  }
+  @media screen and (max-width: "768px") {
+    margin-top: 100px;
+  }
+  .title {
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 80px;
+    &.title_notfound {
+      margin-bottom: 10vw;
+    }
+  }
+
+  .back {
+    display: none;
+  }
+
+  .catalog_block {
+    margin-bottom: 80px;
+  }
+
+  .adaptive_none {
+    display: none;
+  }
+
+  .brandError{
+    color: #db202c;
+    padding-top: 3px;
+    width: 22vw;
+    svg{
+      width: 20px;
+      vertical-align: -2.2px;
+    }
+    @media screen and (max-width: "768px"){
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+
+  .filtration_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    @media screen and (max-width: "550px") {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (max-width: "768px") {
+      margin-top: 20px;
+    }
+    .filtration {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 35vw;
+      cursor: pointer;
+      border-radius: 8px;
+      border: 1px solid #000;
+      background: #eaeaea;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 10px 10px 10px 21px;
+      margin: 0 auto;
+      @media screen and (max-width: "768px") {
+        width: 100%;
+      }
+      p {
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .rotates {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .rotate {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+
+  .volume_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 9.7vw;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: rgb(255, 255, 255);
+
+    p {
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+    }
+  }
+
+  .select {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 16px;
+    border-radius: 0.5rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+
+    p {
+      cursor: pointer;
+    }
+  }
+
+  .filter_modal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    background: rgb(196, 196, 196);
+    margin-top: 40px;
+    padding: 100px;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .row_input {
+    display: flex;
+    gap: 2.6vw;
+
+    input {
+      width: 9.7vw;
+      height: 45px;
+      border-radius: 0.5rem;
+      background: rgb(255, 255, 255);
+      border: none;
+      padding: 16px;
+      @media screen and (max-width: 1060px) {
+        width: 11.2vw;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .select_input_container {
+        width: 49%;
+      }
+      .volume_select_adaptive {
+        width: 100%;
+      }
+      .select {
+        width: 100%;
+      }
+    }
+  }
+
+  .block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    button {
+      width: 22vw;
+      height: 45px;
+      border-radius: 10px;
+      border: 2px solid #19746b;
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: "Inter";
+      background: #19746b;
+      cursor: pointer;
+      transition: all 0.2s;
+      will-change: contents;
+      &:hover {
+        background-color: transparent;
+        color: #19746b;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  .characteristic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 22vw;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: rgb(255, 255, 255);
+    padding: 0 10px 0 16px;
+
+    p {
+      font-weight: 400;
+    }
+  }
+
+  .row_catalog {
+    display: flex;
+    width: 100%;
+    gap: 1.1vw;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    .col_4_catalog {
+      width: 32.5%;
+      display: flex;
+      margin-bottom: 1vh;
+      @media screen and (max-width: "970px") {
+        width: 49%;
+      }
+      @media screen and (max-width: "590px") {
+        width: 100%;
+      }
+    }
+  }
+
+  // -------  Adaptive   -------  //
+
+  @media screen and (max-width: 1060px) {
+    .filter_modal {
+      padding: 40px;
+    }
+    .volume_select {
+      width: 11.2vw;
+      padding: 2px;
+    }
+    .characteristic {
+      width: 25vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .catalog_block {
+      margin-bottom: 28px;
+    }
+
+    .filter_modal {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      border: none;
+      background: none;
+      margin-top: 14px;
+      padding: 0;
+
+      .row {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      }
+      .country {
+        order: -1;
+      }
+      .mileage {
+        order: 1;
+      }
+    }
+
+    .characteristic {
+      width: 100%;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .volume_select_adaptive {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 43.7vw;
+      padding: 10px;
+      height: 45px;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      background: rgb(255, 255, 255);
+
+      p {
+        font-size: 14px;
+        color: rgb(102, 102, 102);
+      }
+    }
+
+    .row_input {
+      input {
+        font-size: 14px;
+        width: 44vw;
+        padding: 10px;
+      }
+    }
+
+    .block {
+      button {
+        width: unset;
+        height: unset;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 200;
+        padding: 8px 170px;
+        margin-top: 14px;
+      }
+    }
+
+    .filtration_block {
+      display: flex;
+      justify-content: space-between;
+
+      .filtration {
+        gap: 5px;
+
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid rgb(204, 203, 203);
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .types_car {
+      gap: 12px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+
+    .main_title {
+      display: grid;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .back {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      p {
+        font-size: 18px;
+        color: #000000;
+      }
+    }
+
+    .adaptive_none {
+      display: block;
+    }
+
+    .select {
+      border: 1px solid rgb(226, 225, 225);
+      padding: 10px;
+      overflow: scroll;
+      overflow-x: hidden;
+      p {
+        padding: 7px 0;
+        font-size: 14px;
+        font-weight: 200;
+      }
+    }
+  }
+  @media screen and (max-width: 490px) {
+    .block {
+      button {
+        padding: 8px 100px;
+      }
+    }
+  }
+}
+
+// ------------ for scrolling --------- //
+.select {
+  position: relative;
+}
+
+.select .options_container {
+  max-height: 120px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.select .options_container {
+  scrollbar-width: thin;
+  scrollbar-color: #19746b #f0f0f0a5;
+}

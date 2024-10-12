@@ -1,0 +1,137 @@
+.container {
+  justify-content: space-between;
+  display: flex;
+  padding-block: 90px;
+  background-image: url(@images/FirstBlock.webp);
+  background-size: cover;
+  background-position: center;
+  height: 91vh;
+}
+
+.title {
+  width: 45vw;
+  font-size: 2.8vw;
+  text-wrap: balance;
+  font-family: "Inter";
+  font-weight: 300;
+  color: white;
+  h1 {
+    font-size: 6.8vw;
+    font-weight: 400;
+    display: block;
+  }
+}
+
+.block {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+.block_title {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.button {
+  padding: 0.8vw 6.8vw;
+  border-radius: 10px;
+  border: 2px solid #19746b;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Inter";
+  background: #19746b;
+  cursor: pointer;
+  transition: all 0.2s;
+  will-change: contents;
+  &:hover {
+    transform: scaleX(1.01);
+    transition: all 0.2s;
+  }
+}
+
+.ConversationImage {
+  width: 75%;
+  @media screen and (max-width: 580px) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: fit-content;
+    padding-bottom: 50px;
+    display: flex;
+    position: relative;
+    background-image: url(@images/hero_mobile_bg.webp);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-block: 100px;
+    overflow: hidden;
+    .ImageCar {
+      display: none;
+    }
+  }
+
+  .block {
+    display: flex;
+  }
+
+  .title {
+    width: 90%;
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: unset;
+
+    p,
+    span {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .block_title {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .button {
+    margin-top: 5.5vw;
+    font-weight: 200;
+    border-radius: 9px;
+    font-size: 1rem;
+    padding: 5px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 4vw;
+    h1 {
+      &:first-child {
+        font-size: 10vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .button {
+    font-size: 14px;
+  }
+}
